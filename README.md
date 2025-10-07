@@ -126,6 +126,15 @@ The application will start on `http://localhost:7860`
 
 ## Architecture
 
+### Modular Structure
+The application is organized into focused modules for better maintainability:
+
+- **`prompt.py`**: Main application orchestrator
+- **`utils.py`**: Token counting and text processing utilities
+- **`document_processor.py`**: Document text extraction from various formats
+- **`llm_operations.py`**: LLM API calls and prompt generation
+- **`gradio_interface.py`**: UI components and user interactions
+
 ### Core Functions
 - `extract_text_from_file()`: Multi-format text extraction
 - `count_tokens()`: Accurate token counting with tiktoken
@@ -138,6 +147,13 @@ The application will start on `http://localhost:7860`
 - **Prompt Generator Interface**: Interactive form with real-time preview
 - **Document Upload Section**: File upload with processing controls
 - **Results Display**: Three-panel output showing content, prompt, and summary
+
+### Benefits of Modular Design
+- **Separation of Concerns**: Each module has a single responsibility
+- **Reusability**: Utility functions shared across modules
+- **Testability**: Independent testing of each component
+- **Scalability**: Easy to extend with new features
+- **Maintainability**: Clear boundaries and logical organization
 
 ## Error Handling
 
