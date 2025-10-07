@@ -1,0 +1,13 @@
+[project]
+name = "gradio-learn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "black>=25.9.0",
+    "gradio>=4.0.0",
+    "langchain-openai>=0.3.33",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
